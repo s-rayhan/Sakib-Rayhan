@@ -20,8 +20,22 @@
 
     <button type="submit">Submit</button>
   </form>
+  
+    <h1 id="title"></h1>
+    <p id="author"></p>
+    <p id="content"></p>
 
   <script src="./script.js"></script>
+  
+  <script>
+    // get post object from local storage
+    const post = JSON.parse(localStorage.getItem('post'));
+
+    // display post data
+    document.getElementById('title').textContent = post.title;
+    document.getElementById('author').textContent = 'By ' + post.author;
+    document.getElementById('content').textContent = post.content;
+  </script>
 </body>
 
 </html>
