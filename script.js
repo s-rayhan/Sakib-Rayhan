@@ -20,5 +20,5 @@ form.addEventListener('submit', (event) => {
   localStorage.setItem('post', JSON.stringify(post));
 
   // redirect to post page
-  window.location.href = 'post.html';
+  window.location.href = './post.html';
 });
